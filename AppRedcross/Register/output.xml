@@ -1,0 +1,965 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.8.1 on darwin)" generated="20200317 15:41:15.941" rpa="false">
+<suite id="s1" name="Register" source="/Users/n.pechsiri/Documents/Work/test-robot/AppRedcross/Register/register.robot">
+<test id="s1-t1" name="Register Success">
+<kw name="Open App">
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<arguments>
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>appPackage=${package_name}</arg>
+<arg>app=${APP_LOCATION}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${deviceName}</arg>
+<arg>autoGrantPermissions=true</arg>
+</arguments>
+<status status="PASS" starttime="20200317 15:41:16.279" endtime="20200317 15:41:27.072"></status>
+</kw>
+<status status="PASS" starttime="20200317 15:41:16.278" endtime="20200317 15:41:27.072"></status>
+</kw>
+<kw name="Open Register">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>//android.widget.ImageButton[@content-desc="Open navigation drawer"]</arg>
+</arguments>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.ImageButton[@content-desc="Open navigation drawer"]</arg>
+</arguments>
+<msg timestamp="20200317 15:41:27.076" level="INFO">Clicking element '//android.widget.ImageButton[@content-desc="Open navigation drawer"]'.</msg>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="PASS" starttime="20200317 15:41:27.294" endtime="20200317 15:41:27.294"></status>
+</kw>
+<msg timestamp="20200317 15:41:27.297" level="FAIL">ValueError: Element locator '//android.widget.ImageButton[@content-desc="Open navigation drawer"]' did not match any elements.</msg>
+<status status="FAIL" starttime="20200317 15:41:27.074" endtime="20200317 15:41:27.297"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.ImageButton[@content-desc="Open navigation drawer"]</arg>
+</arguments>
+<msg timestamp="20200317 15:41:29.300" level="INFO">Clicking element '//android.widget.ImageButton[@content-desc="Open navigation drawer"]'.</msg>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="PASS" starttime="20200317 15:41:29.943" endtime="20200317 15:41:29.943"></status>
+</kw>
+<msg timestamp="20200317 15:41:29.944" level="FAIL">ValueError: Element locator '//android.widget.ImageButton[@content-desc="Open navigation drawer"]' did not match any elements.</msg>
+<status status="FAIL" starttime="20200317 15:41:29.298" endtime="20200317 15:41:29.944"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.ImageButton[@content-desc="Open navigation drawer"]</arg>
+</arguments>
+<msg timestamp="20200317 15:41:31.946" level="INFO">Clicking element '//android.widget.ImageButton[@content-desc="Open navigation drawer"]'.</msg>
+<status status="PASS" starttime="20200317 15:41:31.945" endtime="20200317 15:41:32.216"></status>
+</kw>
+<status status="PASS" starttime="20200317 15:41:27.073" endtime="20200317 15:41:32.216"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>com.gov.red.aed:id/linearRegister</arg>
+</arguments>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>com.gov.red.aed:id/linearRegister</arg>
+</arguments>
+<msg timestamp="20200317 15:41:32.218" level="INFO">Clicking element 'com.gov.red.aed:id/linearRegister'.</msg>
+<status status="PASS" starttime="20200317 15:41:32.217" endtime="20200317 15:41:33.193"></status>
+</kw>
+<status status="PASS" starttime="20200317 15:41:32.216" endtime="20200317 15:41:33.193"></status>
+</kw>
+<status status="PASS" starttime="20200317 15:41:27.072" endtime="20200317 15:41:33.193"></status>
+</kw>
+<kw name="Register Valid Number">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>com.gov.red.aed:id/btnRegister</arg>
+</arguments>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>com.gov.red.aed:id/btnRegister</arg>
+</arguments>
+<msg timestamp="20200317 15:41:33.195" level="INFO">Clicking element 'com.gov.red.aed:id/btnRegister'.</msg>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="PASS" starttime="20200317 15:41:33.418" endtime="20200317 15:41:33.418"></status>
+</kw>
+<msg timestamp="20200317 15:41:33.418" level="FAIL">ValueError: Element locator 'com.gov.red.aed:id/btnRegister' did not match any elements.</msg>
+<status status="FAIL" starttime="20200317 15:41:33.194" endtime="20200317 15:41:33.419"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>com.gov.red.aed:id/btnRegister</arg>
+</arguments>
+<msg timestamp="20200317 15:41:35.423" level="INFO">Clicking element 'com.gov.red.aed:id/btnRegister'.</msg>
+<status status="PASS" starttime="20200317 15:41:35.420" endtime="20200317 15:41:35.522"></status>
+</kw>
+<status status="PASS" starttime="20200317 15:41:33.194" endtime="20200317 15:41:35.522"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>com.gov.red.aed:id/checkAgreement</arg>
+</arguments>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>com.gov.red.aed:id/checkAgreement</arg>
+</arguments>
+<msg timestamp="20200317 15:41:35.524" level="INFO">Clicking element 'com.gov.red.aed:id/checkAgreement'.</msg>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="PASS" starttime="20200317 15:41:35.728" endtime="20200317 15:41:35.728"></status>
+</kw>
+<msg timestamp="20200317 15:41:35.728" level="FAIL">ValueError: Element locator 'com.gov.red.aed:id/checkAgreement' did not match any elements.</msg>
+<status status="FAIL" starttime="20200317 15:41:35.523" endtime="20200317 15:41:35.728"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>com.gov.red.aed:id/checkAgreement</arg>
+</arguments>
+<msg timestamp="20200317 15:41:37.731" level="INFO">Clicking element 'com.gov.red.aed:id/checkAgreement'.</msg>
+<status status="PASS" starttime="20200317 15:41:37.729" endtime="20200317 15:41:37.840"></status>
+</kw>
+<status status="PASS" starttime="20200317 15:41:35.522" endtime="20200317 15:41:37.840"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>com.gov.red.aed:id/btnConfirmAgreement</arg>
+</arguments>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>com.gov.red.aed:id/btnConfirmAgreement</arg>
+</arguments>
+<msg timestamp="20200317 15:41:37.842" level="INFO">Clicking element 'com.gov.red.aed:id/btnConfirmAgreement'.</msg>
+<status status="PASS" starttime="20200317 15:41:37.840" endtime="20200317 15:41:38.416"></status>
+</kw>
+<status status="PASS" starttime="20200317 15:41:37.840" endtime="20200317 15:41:38.416"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>com.gov.red.aed:id/edtPhoneRegister</arg>
+<arg>0982233710</arg>
+</arguments>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>com.gov.red.aed:id/edtPhoneRegister</arg>
+<arg>0982233710</arg>
+</arguments>
+<msg timestamp="20200317 15:41:38.418" level="INFO">Typing text '0982233710' into text field 'com.gov.red.aed:id/edtPhoneRegister'</msg>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="PASS" starttime="20200317 15:41:38.541" endtime="20200317 15:41:38.542"></status>
+</kw>
+<msg timestamp="20200317 15:41:38.542" level="FAIL">ValueError: Element locator 'com.gov.red.aed:id/edtPhoneRegister' did not match any elements.</msg>
+<status status="FAIL" starttime="20200317 15:41:38.417" endtime="20200317 15:41:38.542"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>com.gov.red.aed:id/edtPhoneRegister</arg>
+<arg>0982233710</arg>
+</arguments>
+<msg timestamp="20200317 15:41:40.551" level="INFO">Typing text '0982233710' into text field 'com.gov.red.aed:id/edtPhoneRegister'</msg>
+<status status="PASS" starttime="20200317 15:41:40.543" endtime="20200317 15:41:41.120"></status>
+</kw>
+<status status="PASS" starttime="20200317 15:41:38.416" endtime="20200317 15:41:41.120"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>com.gov.red.aed:id/btnConfirmRegister</arg>
+</arguments>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>com.gov.red.aed:id/btnConfirmRegister</arg>
+</arguments>
+<msg timestamp="20200317 15:41:41.122" level="INFO">Clicking element 'com.gov.red.aed:id/btnConfirmRegister'.</msg>
+<status status="PASS" starttime="20200317 15:41:41.121" endtime="20200317 15:41:41.784"></status>
+</kw>
+<status status="PASS" starttime="20200317 15:41:41.120" endtime="20200317 15:41:41.784"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200317 15:41:43.785" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200317 15:41:41.785" endtime="20200317 15:41:43.786"></status>
+</kw>
+<status status="PASS" starttime="20200317 15:41:33.193" endtime="20200317 15:41:43.786"></status>
+</kw>
+<kw name="Remove">
+<kw name="Remove Application" library="AppiumLibrary">
+<doc>Removes the application that is identified with an application id</doc>
+<arguments>
+<arg>${package_name}</arg>
+</arguments>
+<status status="PASS" starttime="20200317 15:41:43.787" endtime="20200317 15:41:44.459"></status>
+</kw>
+<status status="PASS" starttime="20200317 15:41:43.786" endtime="20200317 15:41:44.459"></status>
+</kw>
+<status status="PASS" starttime="20200317 15:41:16.278" endtime="20200317 15:41:44.459" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Register fail because Wrong Number">
+<kw name="Open App">
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<arguments>
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>appPackage=${package_name}</arg>
+<arg>app=${APP_LOCATION}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${deviceName}</arg>
+<arg>autoGrantPermissions=true</arg>
+</arguments>
+<status status="PASS" starttime="20200317 15:41:44.460" endtime="20200317 15:41:58.732"></status>
+</kw>
+<status status="PASS" starttime="20200317 15:41:44.460" endtime="20200317 15:41:58.732"></status>
+</kw>
+<kw name="Open Register">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>//android.widget.ImageButton[@content-desc="Open navigation drawer"]</arg>
+</arguments>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.ImageButton[@content-desc="Open navigation drawer"]</arg>
+</arguments>
+<msg timestamp="20200317 15:41:58.734" level="INFO">Clicking element '//android.widget.ImageButton[@content-desc="Open navigation drawer"]'.</msg>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="PASS" starttime="20200317 15:41:58.983" endtime="20200317 15:41:58.984"></status>
+</kw>
+<msg timestamp="20200317 15:41:58.984" level="FAIL">ValueError: Element locator '//android.widget.ImageButton[@content-desc="Open navigation drawer"]' did not match any elements.</msg>
+<status status="FAIL" starttime="20200317 15:41:58.733" endtime="20200317 15:41:58.984"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.ImageButton[@content-desc="Open navigation drawer"]</arg>
+</arguments>
+<msg timestamp="20200317 15:42:00.988" level="INFO">Clicking element '//android.widget.ImageButton[@content-desc="Open navigation drawer"]'.</msg>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="PASS" starttime="20200317 15:42:01.488" endtime="20200317 15:42:01.488"></status>
+</kw>
+<msg timestamp="20200317 15:42:01.488" level="FAIL">ValueError: Element locator '//android.widget.ImageButton[@content-desc="Open navigation drawer"]' did not match any elements.</msg>
+<status status="FAIL" starttime="20200317 15:42:00.986" endtime="20200317 15:42:01.488"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.ImageButton[@content-desc="Open navigation drawer"]</arg>
+</arguments>
+<msg timestamp="20200317 15:42:03.490" level="INFO">Clicking element '//android.widget.ImageButton[@content-desc="Open navigation drawer"]'.</msg>
+<status status="PASS" starttime="20200317 15:42:03.489" endtime="20200317 15:42:04.127"></status>
+</kw>
+<status status="PASS" starttime="20200317 15:41:58.733" endtime="20200317 15:42:04.127"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>com.gov.red.aed:id/linearRegister</arg>
+</arguments>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>com.gov.red.aed:id/linearRegister</arg>
+</arguments>
+<msg timestamp="20200317 15:42:04.130" level="INFO">Clicking element 'com.gov.red.aed:id/linearRegister'.</msg>
+<status status="PASS" starttime="20200317 15:42:04.128" endtime="20200317 15:42:05.127"></status>
+</kw>
+<status status="PASS" starttime="20200317 15:42:04.128" endtime="20200317 15:42:05.128"></status>
+</kw>
+<status status="PASS" starttime="20200317 15:41:58.732" endtime="20200317 15:42:05.128"></status>
+</kw>
+<kw name="Register Invalid Number (Wrong Number)">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>com.gov.red.aed:id/btnRegister</arg>
+</arguments>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>com.gov.red.aed:id/btnRegister</arg>
+</arguments>
+<msg timestamp="20200317 15:42:05.131" level="INFO">Clicking element 'com.gov.red.aed:id/btnRegister'.</msg>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="PASS" starttime="20200317 15:42:05.398" endtime="20200317 15:42:05.399"></status>
+</kw>
+<msg timestamp="20200317 15:42:05.399" level="FAIL">ValueError: Element locator 'com.gov.red.aed:id/btnRegister' did not match any elements.</msg>
+<status status="FAIL" starttime="20200317 15:42:05.129" endtime="20200317 15:42:05.399"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>com.gov.red.aed:id/btnRegister</arg>
+</arguments>
+<msg timestamp="20200317 15:42:07.401" level="INFO">Clicking element 'com.gov.red.aed:id/btnRegister'.</msg>
+<status status="PASS" starttime="20200317 15:42:07.400" endtime="20200317 15:42:07.506"></status>
+</kw>
+<status status="PASS" starttime="20200317 15:42:05.129" endtime="20200317 15:42:07.506"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>com.gov.red.aed:id/checkAgreement</arg>
+</arguments>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>com.gov.red.aed:id/checkAgreement</arg>
+</arguments>
+<msg timestamp="20200317 15:42:07.508" level="INFO">Clicking element 'com.gov.red.aed:id/checkAgreement'.</msg>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="PASS" starttime="20200317 15:42:07.778" endtime="20200317 15:42:07.778"></status>
+</kw>
+<msg timestamp="20200317 15:42:07.779" level="FAIL">ValueError: Element locator 'com.gov.red.aed:id/checkAgreement' did not match any elements.</msg>
+<status status="FAIL" starttime="20200317 15:42:07.506" endtime="20200317 15:42:07.779"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>com.gov.red.aed:id/checkAgreement</arg>
+</arguments>
+<msg timestamp="20200317 15:42:09.781" level="INFO">Clicking element 'com.gov.red.aed:id/checkAgreement'.</msg>
+<status status="PASS" starttime="20200317 15:42:09.780" endtime="20200317 15:42:09.885"></status>
+</kw>
+<status status="PASS" starttime="20200317 15:42:07.506" endtime="20200317 15:42:09.885"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>com.gov.red.aed:id/btnConfirmAgreement</arg>
+</arguments>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>com.gov.red.aed:id/btnConfirmAgreement</arg>
+</arguments>
+<msg timestamp="20200317 15:42:09.886" level="INFO">Clicking element 'com.gov.red.aed:id/btnConfirmAgreement'.</msg>
+<status status="PASS" starttime="20200317 15:42:09.885" endtime="20200317 15:42:10.464"></status>
+</kw>
+<status status="PASS" starttime="20200317 15:42:09.885" endtime="20200317 15:42:10.464"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>com.gov.red.aed:id/edtPhoneRegister</arg>
+<arg>38472983323</arg>
+</arguments>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>com.gov.red.aed:id/edtPhoneRegister</arg>
+<arg>38472983323</arg>
+</arguments>
+<msg timestamp="20200317 15:42:10.466" level="INFO">Typing text '38472983323' into text field 'com.gov.red.aed:id/edtPhoneRegister'</msg>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="PASS" starttime="20200317 15:42:10.620" endtime="20200317 15:42:10.620"></status>
+</kw>
+<msg timestamp="20200317 15:42:10.621" level="FAIL">ValueError: Element locator 'com.gov.red.aed:id/edtPhoneRegister' did not match any elements.</msg>
+<status status="FAIL" starttime="20200317 15:42:10.465" endtime="20200317 15:42:10.621"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>com.gov.red.aed:id/edtPhoneRegister</arg>
+<arg>38472983323</arg>
+</arguments>
+<msg timestamp="20200317 15:42:12.623" level="INFO">Typing text '38472983323' into text field 'com.gov.red.aed:id/edtPhoneRegister'</msg>
+<status status="PASS" starttime="20200317 15:42:12.622" endtime="20200317 15:42:12.706"></status>
+</kw>
+<status status="PASS" starttime="20200317 15:42:10.465" endtime="20200317 15:42:12.707"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>com.gov.red.aed:id/btnConfirmRegister</arg>
+</arguments>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>com.gov.red.aed:id/btnConfirmRegister</arg>
+</arguments>
+<msg timestamp="20200317 15:42:12.709" level="INFO">Clicking element 'com.gov.red.aed:id/btnConfirmRegister'.</msg>
+<status status="PASS" starttime="20200317 15:42:12.707" endtime="20200317 15:42:13.392"></status>
+</kw>
+<status status="PASS" starttime="20200317 15:42:12.707" endtime="20200317 15:42:13.393"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4s</arg>
+</arguments>
+<msg timestamp="20200317 15:42:17.393" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20200317 15:42:13.393" endtime="20200317 15:42:17.393"></status>
+</kw>
+<status status="PASS" starttime="20200317 15:42:05.128" endtime="20200317 15:42:17.394"></status>
+</kw>
+<kw name="Remove">
+<kw name="Remove Application" library="AppiumLibrary">
+<doc>Removes the application that is identified with an application id</doc>
+<arguments>
+<arg>${package_name}</arg>
+</arguments>
+<status status="PASS" starttime="20200317 15:42:17.394" endtime="20200317 15:42:18.851"></status>
+</kw>
+<status status="PASS" starttime="20200317 15:42:17.394" endtime="20200317 15:42:18.851"></status>
+</kw>
+<status status="PASS" starttime="20200317 15:41:44.459" endtime="20200317 15:42:18.851" critical="yes"></status>
+</test>
+<test id="s1-t3" name="Register fail becuase Over Number">
+<kw name="Open App">
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<arguments>
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>appPackage=${package_name}</arg>
+<arg>app=${APP_LOCATION}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${deviceName}</arg>
+<arg>autoGrantPermissions=true</arg>
+</arguments>
+<status status="PASS" starttime="20200317 15:42:18.853" endtime="20200317 15:42:32.739"></status>
+</kw>
+<status status="PASS" starttime="20200317 15:42:18.852" endtime="20200317 15:42:32.740"></status>
+</kw>
+<kw name="Open Register">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>//android.widget.ImageButton[@content-desc="Open navigation drawer"]</arg>
+</arguments>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.ImageButton[@content-desc="Open navigation drawer"]</arg>
+</arguments>
+<msg timestamp="20200317 15:42:32.745" level="INFO">Clicking element '//android.widget.ImageButton[@content-desc="Open navigation drawer"]'.</msg>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="PASS" starttime="20200317 15:42:32.951" endtime="20200317 15:42:32.952"></status>
+</kw>
+<msg timestamp="20200317 15:42:32.954" level="FAIL">ValueError: Element locator '//android.widget.ImageButton[@content-desc="Open navigation drawer"]' did not match any elements.</msg>
+<status status="FAIL" starttime="20200317 15:42:32.743" endtime="20200317 15:42:32.954"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.ImageButton[@content-desc="Open navigation drawer"]</arg>
+</arguments>
+<msg timestamp="20200317 15:42:34.956" level="INFO">Clicking element '//android.widget.ImageButton[@content-desc="Open navigation drawer"]'.</msg>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="PASS" starttime="20200317 15:42:35.503" endtime="20200317 15:42:35.503"></status>
+</kw>
+<msg timestamp="20200317 15:42:35.503" level="FAIL">ValueError: Element locator '//android.widget.ImageButton[@content-desc="Open navigation drawer"]' did not match any elements.</msg>
+<status status="FAIL" starttime="20200317 15:42:34.954" endtime="20200317 15:42:35.503"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.ImageButton[@content-desc="Open navigation drawer"]</arg>
+</arguments>
+<msg timestamp="20200317 15:42:37.506" level="INFO">Clicking element '//android.widget.ImageButton[@content-desc="Open navigation drawer"]'.</msg>
+<status status="PASS" starttime="20200317 15:42:37.504" endtime="20200317 15:42:38.212"></status>
+</kw>
+<status status="PASS" starttime="20200317 15:42:32.743" endtime="20200317 15:42:38.212"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>com.gov.red.aed:id/linearRegister</arg>
+</arguments>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>com.gov.red.aed:id/linearRegister</arg>
+</arguments>
+<msg timestamp="20200317 15:42:38.215" level="INFO">Clicking element 'com.gov.red.aed:id/linearRegister'.</msg>
+<status status="PASS" starttime="20200317 15:42:38.213" endtime="20200317 15:42:39.205"></status>
+</kw>
+<status status="PASS" starttime="20200317 15:42:38.212" endtime="20200317 15:42:39.205"></status>
+</kw>
+<status status="PASS" starttime="20200317 15:42:32.741" endtime="20200317 15:42:39.205"></status>
+</kw>
+<kw name="Register Invalid Number (Over Number)">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>com.gov.red.aed:id/btnRegister</arg>
+</arguments>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>com.gov.red.aed:id/btnRegister</arg>
+</arguments>
+<msg timestamp="20200317 15:42:39.208" level="INFO">Clicking element 'com.gov.red.aed:id/btnRegister'.</msg>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="PASS" starttime="20200317 15:42:39.515" endtime="20200317 15:42:39.515"></status>
+</kw>
+<msg timestamp="20200317 15:42:39.516" level="FAIL">ValueError: Element locator 'com.gov.red.aed:id/btnRegister' did not match any elements.</msg>
+<status status="FAIL" starttime="20200317 15:42:39.206" endtime="20200317 15:42:39.516"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>com.gov.red.aed:id/btnRegister</arg>
+</arguments>
+<msg timestamp="20200317 15:42:41.519" level="INFO">Clicking element 'com.gov.red.aed:id/btnRegister'.</msg>
+<status status="PASS" starttime="20200317 15:42:41.517" endtime="20200317 15:42:41.624"></status>
+</kw>
+<status status="PASS" starttime="20200317 15:42:39.206" endtime="20200317 15:42:41.625"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>com.gov.red.aed:id/checkAgreement</arg>
+</arguments>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>com.gov.red.aed:id/checkAgreement</arg>
+</arguments>
+<msg timestamp="20200317 15:42:41.627" level="INFO">Clicking element 'com.gov.red.aed:id/checkAgreement'.</msg>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="PASS" starttime="20200317 15:42:41.900" endtime="20200317 15:42:41.901"></status>
+</kw>
+<msg timestamp="20200317 15:42:41.901" level="FAIL">ValueError: Element locator 'com.gov.red.aed:id/checkAgreement' did not match any elements.</msg>
+<status status="FAIL" starttime="20200317 15:42:41.625" endtime="20200317 15:42:41.901"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>com.gov.red.aed:id/checkAgreement</arg>
+</arguments>
+<msg timestamp="20200317 15:42:43.905" level="INFO">Clicking element 'com.gov.red.aed:id/checkAgreement'.</msg>
+<status status="PASS" starttime="20200317 15:42:43.903" endtime="20200317 15:42:44.025"></status>
+</kw>
+<status status="PASS" starttime="20200317 15:42:41.625" endtime="20200317 15:42:44.025"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>com.gov.red.aed:id/btnConfirmAgreement</arg>
+</arguments>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>com.gov.red.aed:id/btnConfirmAgreement</arg>
+</arguments>
+<msg timestamp="20200317 15:42:44.028" level="INFO">Clicking element 'com.gov.red.aed:id/btnConfirmAgreement'.</msg>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="PASS" starttime="20200317 15:42:44.778" endtime="20200317 15:42:44.779"></status>
+</kw>
+<msg timestamp="20200317 15:42:44.785" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+</msg>
+<status status="FAIL" starttime="20200317 15:42:44.026" endtime="20200317 15:42:44.785"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>com.gov.red.aed:id/btnConfirmAgreement</arg>
+</arguments>
+<msg timestamp="20200317 15:42:46.788" level="INFO">Clicking element 'com.gov.red.aed:id/btnConfirmAgreement'.</msg>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="PASS" starttime="20200317 15:42:46.810" endtime="20200317 15:42:46.811"></status>
+</kw>
+<msg timestamp="20200317 15:42:46.814" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+</msg>
+<status status="FAIL" starttime="20200317 15:42:46.786" endtime="20200317 15:42:46.814"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>com.gov.red.aed:id/btnConfirmAgreement</arg>
+</arguments>
+<msg timestamp="20200317 15:42:48.816" level="INFO">Clicking element 'com.gov.red.aed:id/btnConfirmAgreement'.</msg>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="PASS" starttime="20200317 15:42:48.832" endtime="20200317 15:42:48.832"></status>
+</kw>
+<msg timestamp="20200317 15:42:48.833" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+</msg>
+<status status="FAIL" starttime="20200317 15:42:48.815" endtime="20200317 15:42:48.834"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>com.gov.red.aed:id/btnConfirmAgreement</arg>
+</arguments>
+<msg timestamp="20200317 15:42:50.836" level="INFO">Clicking element 'com.gov.red.aed:id/btnConfirmAgreement'.</msg>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="PASS" starttime="20200317 15:42:50.852" endtime="20200317 15:42:50.852"></status>
+</kw>
+<msg timestamp="20200317 15:42:50.853" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+</msg>
+<status status="FAIL" starttime="20200317 15:42:50.835" endtime="20200317 15:42:50.853"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>com.gov.red.aed:id/btnConfirmAgreement</arg>
+</arguments>
+<msg timestamp="20200317 15:42:52.855" level="INFO">Clicking element 'com.gov.red.aed:id/btnConfirmAgreement'.</msg>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="PASS" starttime="20200317 15:42:52.868" endtime="20200317 15:42:52.868"></status>
+</kw>
+<msg timestamp="20200317 15:42:52.869" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+</msg>
+<status status="FAIL" starttime="20200317 15:42:52.853" endtime="20200317 15:42:52.869"></status>
+</kw>
+<msg timestamp="20200317 15:42:52.869" level="FAIL">Keyword 'Click Element' failed after retrying 5 times. The last error was: WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+</msg>
+<status status="FAIL" starttime="20200317 15:42:44.025" endtime="20200317 15:42:52.869"></status>
+</kw>
+<status status="FAIL" starttime="20200317 15:42:39.205" endtime="20200317 15:42:52.871"></status>
+</kw>
+<status status="FAIL" starttime="20200317 15:42:18.852" endtime="20200317 15:42:52.871" critical="yes">Keyword 'Click Element' failed after retrying 5 times. The last error was: WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+</status>
+</test>
+<test id="s1-t4" name="Register fail because Input Text">
+<kw name="Open App">
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<arguments>
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>appPackage=${package_name}</arg>
+<arg>app=${APP_LOCATION}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${deviceName}</arg>
+<arg>autoGrantPermissions=true</arg>
+</arguments>
+<status status="PASS" starttime="20200317 15:42:52.873" endtime="20200317 15:43:04.388"></status>
+</kw>
+<status status="PASS" starttime="20200317 15:42:52.873" endtime="20200317 15:43:04.388"></status>
+</kw>
+<kw name="Open Register">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>//android.widget.ImageButton[@content-desc="Open navigation drawer"]</arg>
+</arguments>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.ImageButton[@content-desc="Open navigation drawer"]</arg>
+</arguments>
+<msg timestamp="20200317 15:43:04.391" level="INFO">Clicking element '//android.widget.ImageButton[@content-desc="Open navigation drawer"]'.</msg>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="PASS" starttime="20200317 15:43:04.635" endtime="20200317 15:43:04.635"></status>
+</kw>
+<msg timestamp="20200317 15:43:04.635" level="FAIL">ValueError: Element locator '//android.widget.ImageButton[@content-desc="Open navigation drawer"]' did not match any elements.</msg>
+<status status="FAIL" starttime="20200317 15:43:04.389" endtime="20200317 15:43:04.636"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.ImageButton[@content-desc="Open navigation drawer"]</arg>
+</arguments>
+<msg timestamp="20200317 15:43:06.640" level="INFO">Clicking element '//android.widget.ImageButton[@content-desc="Open navigation drawer"]'.</msg>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="PASS" starttime="20200317 15:43:07.125" endtime="20200317 15:43:07.125"></status>
+</kw>
+<msg timestamp="20200317 15:43:07.126" level="FAIL">ValueError: Element locator '//android.widget.ImageButton[@content-desc="Open navigation drawer"]' did not match any elements.</msg>
+<status status="FAIL" starttime="20200317 15:43:06.637" endtime="20200317 15:43:07.126"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.ImageButton[@content-desc="Open navigation drawer"]</arg>
+</arguments>
+<msg timestamp="20200317 15:43:09.128" level="INFO">Clicking element '//android.widget.ImageButton[@content-desc="Open navigation drawer"]'.</msg>
+<status status="PASS" starttime="20200317 15:43:09.126" endtime="20200317 15:43:10.038"></status>
+</kw>
+<status status="PASS" starttime="20200317 15:43:04.389" endtime="20200317 15:43:10.038"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>com.gov.red.aed:id/linearRegister</arg>
+</arguments>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>com.gov.red.aed:id/linearRegister</arg>
+</arguments>
+<msg timestamp="20200317 15:43:10.042" level="INFO">Clicking element 'com.gov.red.aed:id/linearRegister'.</msg>
+<status status="PASS" starttime="20200317 15:43:10.039" endtime="20200317 15:43:11.103"></status>
+</kw>
+<status status="PASS" starttime="20200317 15:43:10.038" endtime="20200317 15:43:11.103"></status>
+</kw>
+<status status="PASS" starttime="20200317 15:43:04.388" endtime="20200317 15:43:11.103"></status>
+</kw>
+<kw name="Register Invalid Number (Text)">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>com.gov.red.aed:id/btnRegister</arg>
+</arguments>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>com.gov.red.aed:id/btnRegister</arg>
+</arguments>
+<msg timestamp="20200317 15:43:11.106" level="INFO">Clicking element 'com.gov.red.aed:id/btnRegister'.</msg>
+<status status="PASS" starttime="20200317 15:43:11.104" endtime="20200317 15:43:12.176"></status>
+</kw>
+<status status="PASS" starttime="20200317 15:43:11.104" endtime="20200317 15:43:12.176"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>com.gov.red.aed:id/checkAgreement</arg>
+</arguments>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>com.gov.red.aed:id/checkAgreement</arg>
+</arguments>
+<msg timestamp="20200317 15:43:12.179" level="INFO">Clicking element 'com.gov.red.aed:id/checkAgreement'.</msg>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="PASS" starttime="20200317 15:43:12.591" endtime="20200317 15:43:12.592"></status>
+</kw>
+<msg timestamp="20200317 15:43:12.592" level="FAIL">ValueError: Element locator 'com.gov.red.aed:id/checkAgreement' did not match any elements.</msg>
+<status status="FAIL" starttime="20200317 15:43:12.177" endtime="20200317 15:43:12.592"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>com.gov.red.aed:id/checkAgreement</arg>
+</arguments>
+<msg timestamp="20200317 15:43:14.595" level="INFO">Clicking element 'com.gov.red.aed:id/checkAgreement'.</msg>
+<status status="PASS" starttime="20200317 15:43:14.593" endtime="20200317 15:43:14.736"></status>
+</kw>
+<status status="PASS" starttime="20200317 15:43:12.176" endtime="20200317 15:43:14.737"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>com.gov.red.aed:id/btnConfirmAgreement</arg>
+</arguments>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>com.gov.red.aed:id/btnConfirmAgreement</arg>
+</arguments>
+<msg timestamp="20200317 15:43:14.740" level="INFO">Clicking element 'com.gov.red.aed:id/btnConfirmAgreement'.</msg>
+<status status="PASS" starttime="20200317 15:43:14.737" endtime="20200317 15:43:15.329"></status>
+</kw>
+<status status="PASS" starttime="20200317 15:43:14.737" endtime="20200317 15:43:15.330"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>com.gov.red.aed:id/edtPhoneRegister</arg>
+<arg>NUTAPOL</arg>
+</arguments>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>com.gov.red.aed:id/edtPhoneRegister</arg>
+<arg>NUTAPOL</arg>
+</arguments>
+<msg timestamp="20200317 15:43:15.332" level="INFO">Typing text 'NUTAPOL' into text field 'com.gov.red.aed:id/edtPhoneRegister'</msg>
+<status status="PASS" starttime="20200317 15:43:15.330" endtime="20200317 15:43:16.908"></status>
+</kw>
+<status status="PASS" starttime="20200317 15:43:15.330" endtime="20200317 15:43:16.908"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>com.gov.red.aed:id/btnConfirmRegister</arg>
+</arguments>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>com.gov.red.aed:id/btnConfirmRegister</arg>
+</arguments>
+<msg timestamp="20200317 15:43:16.912" level="INFO">Clicking element 'com.gov.red.aed:id/btnConfirmRegister'.</msg>
+<status status="PASS" starttime="20200317 15:43:16.910" endtime="20200317 15:43:17.617"></status>
+</kw>
+<status status="PASS" starttime="20200317 15:43:16.909" endtime="20200317 15:43:17.617"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4s</arg>
+</arguments>
+<msg timestamp="20200317 15:43:21.619" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20200317 15:43:17.618" endtime="20200317 15:43:21.619"></status>
+</kw>
+<status status="PASS" starttime="20200317 15:43:11.103" endtime="20200317 15:43:21.619"></status>
+</kw>
+<kw name="Remove">
+<kw name="Remove Application" library="AppiumLibrary">
+<doc>Removes the application that is identified with an application id</doc>
+<arguments>
+<arg>${package_name}</arg>
+</arguments>
+<status status="PASS" starttime="20200317 15:43:21.619" endtime="20200317 15:43:22.182"></status>
+</kw>
+<status status="PASS" starttime="20200317 15:43:21.619" endtime="20200317 15:43:22.182"></status>
+</kw>
+<status status="PASS" starttime="20200317 15:42:52.872" endtime="20200317 15:43:22.182" critical="yes"></status>
+</test>
+<kw name="Remove" type="teardown">
+<kw name="Remove Application" library="AppiumLibrary">
+<doc>Removes the application that is identified with an application id</doc>
+<arguments>
+<arg>${package_name}</arg>
+</arguments>
+<status status="PASS" starttime="20200317 15:43:22.202" endtime="20200317 15:43:22.317"></status>
+</kw>
+<status status="PASS" starttime="20200317 15:43:22.202" endtime="20200317 15:43:22.318"></status>
+</kw>
+<status status="FAIL" starttime="20200317 15:41:15.942" endtime="20200317 15:43:22.318"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="1">Critical Tests</stat>
+<stat pass="3" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="1" id="s1" name="Register">Register</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

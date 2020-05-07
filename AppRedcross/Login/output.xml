@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.8.1 on darwin)" generated="20200410 11:16:37.651" rpa="false">
+<suite id="s1" name="Login" source="/Users/n.pechsiri/Documents/Work/test-robot/AppRedcross/Login/login.robot">
+<test id="s1-t1" name="Login Success">
+<kw name="Open App">
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<arguments>
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>appPackage=${package_name}</arg>
+<arg>app=${APP_LOCATION}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${deviceName}</arg>
+<arg>autoGrantPermissions=true</arg>
+</arguments>
+<status status="PASS" starttime="20200410 11:16:37.938" endtime="20200410 11:16:51.750"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200410 11:16:56.752" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200410 11:16:51.751" endtime="20200410 11:16:56.752"></status>
+</kw>
+<status status="PASS" starttime="20200410 11:16:37.938" endtime="20200410 11:16:56.753"></status>
+</kw>
+<kw name="Open Login">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>//android.widget.ImageButton[@content-desc="Open navigation drawer"]</arg>
+</arguments>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.ImageButton[@content-desc="Open navigation drawer"]</arg>
+</arguments>
+<msg timestamp="20200410 11:16:56.756" level="INFO">Clicking element '//android.widget.ImageButton[@content-desc="Open navigation drawer"]'.</msg>
+<status status="PASS" starttime="20200410 11:16:56.754" endtime="20200410 11:16:58.388"></status>
+</kw>
+<status status="PASS" starttime="20200410 11:16:56.753" endtime="20200410 11:16:58.388"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>com.gov.red.aed:id/linearSignIn</arg>
+</arguments>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>com.gov.red.aed:id/linearSignIn</arg>
+</arguments>
+<msg timestamp="20200410 11:16:58.391" level="INFO">Clicking element 'com.gov.red.aed:id/linearSignIn'.</msg>
+<status status="PASS" starttime="20200410 11:16:58.389" endtime="20200410 11:17:00.774"></status>
+</kw>
+<status status="PASS" starttime="20200410 11:16:58.389" endtime="20200410 11:17:00.774"></status>
+</kw>
+<status status="PASS" starttime="20200410 11:16:56.753" endtime="20200410 11:17:00.774"></status>
+</kw>
+<kw name="Login Valid number">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>com.gov.red.aed:id/edtPhoneLogin</arg>
+<arg>0982233710</arg>
+</arguments>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>com.gov.red.aed:id/edtPhoneLogin</arg>
+<arg>0982233710</arg>
+</arguments>
+<msg timestamp="20200410 11:17:00.777" level="INFO">Typing text '0982233710' into text field 'com.gov.red.aed:id/edtPhoneLogin'</msg>
+<status status="PASS" starttime="20200410 11:17:00.775" endtime="20200410 11:17:00.906"></status>
+</kw>
+<status status="PASS" starttime="20200410 11:17:00.775" endtime="20200410 11:17:00.906"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>com.gov.red.aed:id/btnConfirmLogin</arg>
+</arguments>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>com.gov.red.aed:id/btnConfirmLogin</arg>
+</arguments>
+<msg timestamp="20200410 11:17:00.908" level="INFO">Clicking element 'com.gov.red.aed:id/btnConfirmLogin'.</msg>
+<status status="PASS" starttime="20200410 11:17:00.907" endtime="20200410 11:17:01.575"></status>
+</kw>
+<status status="PASS" starttime="20200410 11:17:00.906" endtime="20200410 11:17:01.575"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>20s</arg>
+</arguments>
+<msg timestamp="20200410 11:17:21.576" level="INFO">Slept 20 seconds</msg>
+<status status="PASS" starttime="20200410 11:17:01.575" endtime="20200410 11:17:21.576"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>com.gov.red.aed:id/btnConfirmOTPLogin</arg>
+</arguments>
+<msg timestamp="20200410 11:17:21.577" level="INFO">Clicking element 'com.gov.red.aed:id/btnConfirmOTPLogin'.</msg>
+<status status="PASS" starttime="20200410 11:17:21.576" endtime="20200410 11:17:21.661"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200410 11:17:26.662" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200410 11:17:21.662" endtime="20200410 11:17:26.662"></status>
+</kw>
+<status status="PASS" starttime="20200410 11:17:00.774" endtime="20200410 11:17:26.663"></status>
+</kw>
+<status status="PASS" starttime="20200410 11:16:37.938" endtime="20200410 11:17:26.663" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Login Fail becaue number wrong">
+<kw name="Open App">
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<arguments>
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>appPackage=${package_name}</arg>
+<arg>app=${APP_LOCATION}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${deviceName}</arg>
+<arg>autoGrantPermissions=true</arg>
+</arguments>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="PASS" starttime="20200410 11:17:34.406" endtime="20200410 11:17:34.407"></status>
+</kw>
+<msg timestamp="20200410 11:17:34.416" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command '/Users/n.pechsiri/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell settings delete global hidden_api_policy_pre_p_apps' exited with code 1'; Stderr: 'error: device offline'; Code: '1'
+</msg>
+<status status="FAIL" starttime="20200410 11:17:26.665" endtime="20200410 11:17:34.416"></status>
+</kw>
+<status status="FAIL" starttime="20200410 11:17:26.664" endtime="20200410 11:17:34.419"></status>
+</kw>
+<status status="FAIL" starttime="20200410 11:17:26.664" endtime="20200410 11:17:34.419" critical="yes">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command '/Users/n.pechsiri/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell settings delete global hidden_api_policy_pre_p_apps' exited with code 1'; Stderr: 'error: device offline'; Code: '1'
+</status>
+</test>
+<test id="s1-t3" name="Login Fail because over number">
+<kw name="Open App">
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<arguments>
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>appPackage=${package_name}</arg>
+<arg>app=${APP_LOCATION}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${deviceName}</arg>
+<arg>autoGrantPermissions=true</arg>
+</arguments>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="PASS" starttime="20200410 11:17:44.348" endtime="20200410 11:17:44.348"></status>
+</kw>
+<msg timestamp="20200410 11:17:44.359" level="FAIL">ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))</msg>
+<status status="FAIL" starttime="20200410 11:17:34.423" endtime="20200410 11:17:44.359"></status>
+</kw>
+<status status="FAIL" starttime="20200410 11:17:34.422" endtime="20200410 11:17:44.359"></status>
+</kw>
+<status status="FAIL" starttime="20200410 11:17:34.419" endtime="20200410 11:17:44.359" critical="yes">ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))</status>
+</test>
+<test id="s1-t4" name="Login Admin Success">
+<kw name="Open App">
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<arguments>
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>appPackage=${package_name}</arg>
+<arg>app=${APP_LOCATION}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${deviceName}</arg>
+<arg>autoGrantPermissions=true</arg>
+</arguments>
+<msg timestamp="20200410 11:17:44.361" level="INFO">Could not connect to port 4723 on host localhost</msg>
+<msg timestamp="20200410 11:17:44.361" level="INFO">Could not get IP address for host: localhost</msg>
+<msg timestamp="20200410 11:17:44.362" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10a461820&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /wd/hub/session</msg>
+<msg timestamp="20200410 11:17:44.363" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10a461850&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /wd/hub/session</msg>
+<msg timestamp="20200410 11:17:44.364" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10a461d00&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /wd/hub/session</msg>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="PASS" starttime="20200410 11:17:44.365" endtime="20200410 11:17:44.366"></status>
+</kw>
+<msg timestamp="20200410 11:17:44.366" level="FAIL">MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10a461ac0&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))</msg>
+<status status="FAIL" starttime="20200410 11:17:44.360" endtime="20200410 11:17:44.367"></status>
+</kw>
+<status status="FAIL" starttime="20200410 11:17:44.360" endtime="20200410 11:17:44.367"></status>
+</kw>
+<status status="FAIL" starttime="20200410 11:17:44.360" endtime="20200410 11:17:44.367" critical="yes">MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10a461ac0&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))</status>
+</test>
+<test id="s1-t5" name="Register Success">
+<kw name="Open App">
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<arguments>
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>appPackage=${package_name}</arg>
+<arg>app=${APP_LOCATION}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${deviceName}</arg>
+<arg>autoGrantPermissions=true</arg>
+</arguments>
+<msg timestamp="20200410 11:17:44.370" level="INFO">Could not connect to port 4723 on host localhost</msg>
+<msg timestamp="20200410 11:17:44.370" level="INFO">Could not get IP address for host: localhost</msg>
+<msg timestamp="20200410 11:17:44.373" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10a55ce80&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /wd/hub/session</msg>
+<msg timestamp="20200410 11:17:44.374" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10a55c310&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /wd/hub/session</msg>
+<msg timestamp="20200410 11:17:44.375" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10a4520a0&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /wd/hub/session</msg>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="PASS" starttime="20200410 11:17:44.376" endtime="20200410 11:17:44.376"></status>
+</kw>
+<msg timestamp="20200410 11:17:44.377" level="FAIL">MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10a461be0&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))</msg>
+<status status="FAIL" starttime="20200410 11:17:44.369" endtime="20200410 11:17:44.377"></status>
+</kw>
+<status status="FAIL" starttime="20200410 11:17:44.368" endtime="20200410 11:17:44.377"></status>
+</kw>
+<status status="FAIL" starttime="20200410 11:17:44.367" endtime="20200410 11:17:44.377" critical="yes">MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10a461be0&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))</status>
+</test>
+<kw name="Remove" type="teardown">
+<kw name="Remove Application" library="AppiumLibrary">
+<doc>Removes the application that is identified with an application id</doc>
+<arguments>
+<arg>${package_name}</arg>
+</arguments>
+<msg timestamp="20200410 11:17:44.381" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10a461700&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /wd/hub/session/7edcc4a0-6953-4195-b1b5-f566bfc0cb4a/appium/device/remove_app</msg>
+<msg timestamp="20200410 11:17:44.381" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10a50cd00&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /wd/hub/session/7edcc4a0-6953-4195-b1b5-f566bfc0cb4a/appium/device/remove_app</msg>
+<msg timestamp="20200410 11:17:44.382" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10a50c730&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /wd/hub/session/7edcc4a0-6953-4195-b1b5-f566bfc0cb4a/appium/device/remove_app</msg>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="PASS" starttime="20200410 11:17:44.383" endtime="20200410 11:17:44.383"></status>
+</kw>
+<msg timestamp="20200410 11:17:44.385" level="FAIL">MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /wd/hub/session/7edcc4a0-6953-4195-b1b5-f566bfc0cb4a/appium/device/remove_app (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10a50c670&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))</msg>
+<status status="FAIL" starttime="20200410 11:17:44.380" endtime="20200410 11:17:44.385"></status>
+</kw>
+<status status="FAIL" starttime="20200410 11:17:44.379" endtime="20200410 11:17:44.385">MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /wd/hub/session/7edcc4a0-6953-4195-b1b5-f566bfc0cb4a/appium/device/remove_app (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10a50c670&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))</status>
+</kw>
+<status status="FAIL" starttime="20200410 11:16:37.652" endtime="20200410 11:17:44.385">Suite teardown failed:
+MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /wd/hub/session/7edcc4a0-6953-4195-b1b5-f566bfc0cb4a/appium/device/remove_app (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10a50c670&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))</status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="5">Critical Tests</stat>
+<stat pass="0" fail="5">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="5" id="s1" name="Login">Login</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20200410 11:17:44.362" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10a461820&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /wd/hub/session</msg>
+<msg timestamp="20200410 11:17:44.363" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10a461850&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /wd/hub/session</msg>
+<msg timestamp="20200410 11:17:44.364" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10a461d00&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /wd/hub/session</msg>
+<msg timestamp="20200410 11:17:44.373" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10a55ce80&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /wd/hub/session</msg>
+<msg timestamp="20200410 11:17:44.374" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10a55c310&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /wd/hub/session</msg>
+<msg timestamp="20200410 11:17:44.375" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10a4520a0&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /wd/hub/session</msg>
+<msg timestamp="20200410 11:17:44.381" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10a461700&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /wd/hub/session/7edcc4a0-6953-4195-b1b5-f566bfc0cb4a/appium/device/remove_app</msg>
+<msg timestamp="20200410 11:17:44.381" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10a50cd00&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /wd/hub/session/7edcc4a0-6953-4195-b1b5-f566bfc0cb4a/appium/device/remove_app</msg>
+<msg timestamp="20200410 11:17:44.382" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10a50c730&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /wd/hub/session/7edcc4a0-6953-4195-b1b5-f566bfc0cb4a/appium/device/remove_app</msg>
+</errors>
+</robot>

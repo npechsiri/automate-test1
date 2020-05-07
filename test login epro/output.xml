@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.8.1 on darwin)" generated="20200507 22:31:33.649" rpa="false">
+<suite id="s1" name="Test4" source="/Users/n.pechsiri/Documents/Work/test-robot/test4/test4.robot">
+<test id="s1-t1" name="Login case Pass">
+<kw name="open web 203.150.52.26">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200507 22:31:33.857" level="INFO">Opening browser 'chrome' to base url 'http://203.150.52.26/'.</msg>
+<status status="PASS" starttime="20200507 22:31:33.857" endtime="20200507 22:31:38.613"></status>
+</kw>
+<status status="PASS" starttime="20200507 22:31:33.856" endtime="20200507 22:31:38.614"></status>
+</kw>
+<kw name="Login PASS">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=email</arg>
+<arg>${input_id}</arg>
+</arguments>
+<msg timestamp="20200507 22:31:38.615" level="INFO">Typing text 'super@admin.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20200507 22:31:38.615" endtime="20200507 22:31:38.768"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>${input_password}</arg>
+</arguments>
+<msg timestamp="20200507 22:31:38.769" level="INFO">Typing text '1234' into text field 'id=password'.</msg>
+<status status="PASS" starttime="20200507 22:31:38.769" endtime="20200507 22:31:38.826"></status>
+</kw>
+<kw name="Submit Form" library="Selenium2Library">
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20200507 22:31:38.826" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20200507 22:31:38.826" endtime="20200507 22:31:39.649"></status>
+</kw>
+<status status="PASS" starttime="20200507 22:31:38.614" endtime="20200507 22:31:39.650"></status>
+</kw>
+<kw name="PASS">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${expected_result}</arg>
+</arguments>
+<status status="PASS" starttime="20200507 22:31:39.650" endtime="20200507 22:31:39.650"></status>
+</kw>
+<status status="PASS" starttime="20200507 22:31:39.650" endtime="20200507 22:31:39.651"></status>
+</kw>
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<arguments>
+<arg>http://203.150.52.26/home</arg>
+</arguments>
+<msg timestamp="20200507 22:31:39.655" level="INFO">Current location is 'http://203.150.52.26/home'.</msg>
+<status status="PASS" starttime="20200507 22:31:39.651" endtime="20200507 22:31:39.655"></status>
+</kw>
+<kw name="Close All Browsers" library="Selenium2Library" type="teardown">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20200507 22:31:39.655" endtime="20200507 22:31:39.732"></status>
+</kw>
+<status status="PASS" starttime="20200507 22:31:33.856" endtime="20200507 22:31:39.732" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Login case Fail1 Because wrong Password">
+<kw name="open web 203.150.52.26">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200507 22:31:39.734" level="INFO">Opening browser 'chrome' to base url 'http://203.150.52.26/'.</msg>
+<status status="PASS" starttime="20200507 22:31:39.734" endtime="20200507 22:31:43.180"></status>
+</kw>
+<status status="PASS" starttime="20200507 22:31:39.733" endtime="20200507 22:31:43.180"></status>
+</kw>
+<kw name="Login Fail Wrong Password">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=email</arg>
+<arg>${input_id}</arg>
+</arguments>
+<msg timestamp="20200507 22:31:43.181" level="INFO">Typing text 'super@admin.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20200507 22:31:43.181" endtime="20200507 22:31:43.319"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>${input_password1}</arg>
+</arguments>
+<msg timestamp="20200507 22:31:43.320" level="INFO">Typing text '4321' into text field 'id=password'.</msg>
+<status status="PASS" starttime="20200507 22:31:43.320" endtime="20200507 22:31:43.383"></status>
+</kw>
+<kw name="Submit Form" library="Selenium2Library">
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20200507 22:31:43.383" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20200507 22:31:43.383" endtime="20200507 22:31:43.664"></status>
+</kw>
+<status status="PASS" starttime="20200507 22:31:43.180" endtime="20200507 22:31:43.664"></status>
+</kw>
+<kw name="NOT PASS">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${expected_result}</arg>
+</arguments>
+<status status="PASS" starttime="20200507 22:31:43.664" endtime="20200507 22:31:43.665"></status>
+</kw>
+<status status="PASS" starttime="20200507 22:31:43.664" endtime="20200507 22:31:43.665"></status>
+</kw>
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<arguments>
+<arg>http://203.150.52.26/</arg>
+</arguments>
+<msg timestamp="20200507 22:31:43.679" level="INFO">Current location is 'http://203.150.52.26/'.</msg>
+<status status="PASS" starttime="20200507 22:31:43.665" endtime="20200507 22:31:43.679"></status>
+</kw>
+<kw name="Close All Browsers" library="Selenium2Library" type="teardown">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20200507 22:31:43.679" endtime="20200507 22:31:43.751"></status>
+</kw>
+<status status="PASS" starttime="20200507 22:31:39.733" endtime="20200507 22:31:43.751" critical="yes"></status>
+</test>
+<test id="s1-t3" name="Login case Fail1 Because wrong User">
+<kw name="open web 203.150.52.26">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200507 22:31:43.753" level="INFO">Opening browser 'chrome' to base url 'http://203.150.52.26/'.</msg>
+<status status="PASS" starttime="20200507 22:31:43.753" endtime="20200507 22:31:47.150"></status>
+</kw>
+<status status="PASS" starttime="20200507 22:31:43.752" endtime="20200507 22:31:47.151"></status>
+</kw>
+<kw name="Login Fail Wrong User">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=email</arg>
+<arg>${input_id1}</arg>
+</arguments>
+<msg timestamp="20200507 22:31:47.152" level="INFO">Typing text 'nut@admin.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20200507 22:31:47.152" endtime="20200507 22:31:47.283"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>${input_password}</arg>
+</arguments>
+<msg timestamp="20200507 22:31:47.284" level="INFO">Typing text '1234' into text field 'id=password'.</msg>
+<status status="PASS" starttime="20200507 22:31:47.284" endtime="20200507 22:31:47.338"></status>
+</kw>
+<kw name="Submit Form" library="Selenium2Library">
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20200507 22:31:47.338" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20200507 22:31:47.338" endtime="20200507 22:31:47.550"></status>
+</kw>
+<status status="PASS" starttime="20200507 22:31:47.151" endtime="20200507 22:31:47.550"></status>
+</kw>
+<kw name="NOT PASS">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${expected_result}</arg>
+</arguments>
+<status status="PASS" starttime="20200507 22:31:47.550" endtime="20200507 22:31:47.551"></status>
+</kw>
+<status status="PASS" starttime="20200507 22:31:47.550" endtime="20200507 22:31:47.551"></status>
+</kw>
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<arguments>
+<arg>http://203.150.52.26/</arg>
+</arguments>
+<msg timestamp="20200507 22:31:47.565" level="INFO">Current location is 'http://203.150.52.26/'.</msg>
+<status status="PASS" starttime="20200507 22:31:47.551" endtime="20200507 22:31:47.565"></status>
+</kw>
+<kw name="Close All Browsers" library="Selenium2Library" type="teardown">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20200507 22:31:47.566" endtime="20200507 22:31:47.636"></status>
+</kw>
+<status status="PASS" starttime="20200507 22:31:43.752" endtime="20200507 22:31:47.636" critical="yes"></status>
+</test>
+<test id="s1-t4" name="Login case Fail because wrong user and password">
+<kw name="open web 203.150.52.26">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200507 22:31:47.638" level="INFO">Opening browser 'chrome' to base url 'http://203.150.52.26/'.</msg>
+<status status="PASS" starttime="20200507 22:31:47.638" endtime="20200507 22:31:51.233"></status>
+</kw>
+<status status="PASS" starttime="20200507 22:31:47.638" endtime="20200507 22:31:51.234"></status>
+</kw>
+<kw name="Login Fail Wrong User">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=email</arg>
+<arg>${input_id1}</arg>
+</arguments>
+<msg timestamp="20200507 22:31:51.235" level="INFO">Typing text 'nut@admin.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20200507 22:31:51.234" endtime="20200507 22:31:51.365"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>${input_password}</arg>
+</arguments>
+<msg timestamp="20200507 22:31:51.365" level="INFO">Typing text '1234' into text field 'id=password'.</msg>
+<status status="PASS" starttime="20200507 22:31:51.365" endtime="20200507 22:31:51.418"></status>
+</kw>
+<kw name="Submit Form" library="Selenium2Library">
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20200507 22:31:51.418" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20200507 22:31:51.418" endtime="20200507 22:31:51.633"></status>
+</kw>
+<status status="PASS" starttime="20200507 22:31:51.234" endtime="20200507 22:31:51.633"></status>
+</kw>
+<kw name="NOT PASS">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${expected_result}</arg>
+</arguments>
+<status status="PASS" starttime="20200507 22:31:51.633" endtime="20200507 22:31:51.634"></status>
+</kw>
+<status status="PASS" starttime="20200507 22:31:51.633" endtime="20200507 22:31:51.634"></status>
+</kw>
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<arguments>
+<arg>http://203.150.52.26/</arg>
+</arguments>
+<msg timestamp="20200507 22:31:51.648" level="INFO">Current location is 'http://203.150.52.26/'.</msg>
+<status status="PASS" starttime="20200507 22:31:51.634" endtime="20200507 22:31:51.649"></status>
+</kw>
+<kw name="Close All Browsers" library="Selenium2Library" type="teardown">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20200507 22:31:51.649" endtime="20200507 22:31:51.720"></status>
+</kw>
+<status status="PASS" starttime="20200507 22:31:47.637" endtime="20200507 22:31:51.720" critical="yes"></status>
+</test>
+<test id="s1-t5" name="Login case Fail because empty">
+<kw name="open web 203.150.52.26">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200507 22:31:51.722" level="INFO">Opening browser 'chrome' to base url 'http://203.150.52.26/'.</msg>
+<status status="PASS" starttime="20200507 22:31:51.722" endtime="20200507 22:31:55.150"></status>
+</kw>
+<status status="PASS" starttime="20200507 22:31:51.721" endtime="20200507 22:31:55.150"></status>
+</kw>
+<kw name="Login Fail empty">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=email</arg>
+<arg>${input_empty_text}</arg>
+</arguments>
+<msg timestamp="20200507 22:31:55.151" level="INFO">Typing text '' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20200507 22:31:55.150" endtime="20200507 22:31:55.227"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>$${input_empty_text}</arg>
+</arguments>
+<msg timestamp="20200507 22:31:55.227" level="INFO">Typing text '$' into text field 'id=password'.</msg>
+<status status="PASS" starttime="20200507 22:31:55.227" endtime="20200507 22:31:55.319"></status>
+</kw>
+<kw name="Submit Form" library="Selenium2Library">
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20200507 22:31:55.319" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20200507 22:31:55.319" endtime="20200507 22:31:55.508"></status>
+</kw>
+<status status="PASS" starttime="20200507 22:31:55.150" endtime="20200507 22:31:55.508"></status>
+</kw>
+<kw name="NOT PASS">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${expected_result}</arg>
+</arguments>
+<status status="PASS" starttime="20200507 22:31:55.509" endtime="20200507 22:31:55.509"></status>
+</kw>
+<status status="PASS" starttime="20200507 22:31:55.508" endtime="20200507 22:31:55.509"></status>
+</kw>
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<arguments>
+<arg>http://203.150.52.26/</arg>
+</arguments>
+<msg timestamp="20200507 22:31:55.523" level="INFO">Current location is 'http://203.150.52.26/'.</msg>
+<status status="PASS" starttime="20200507 22:31:55.509" endtime="20200507 22:31:55.523"></status>
+</kw>
+<kw name="Close All Browsers" library="Selenium2Library" type="teardown">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20200507 22:31:55.524" endtime="20200507 22:31:55.598"></status>
+</kw>
+<status status="PASS" starttime="20200507 22:31:51.721" endtime="20200507 22:31:55.598" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200507 22:31:33.650" endtime="20200507 22:31:55.599"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0">Critical Tests</stat>
+<stat pass="5" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="0" id="s1" name="Test4">Test4</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
